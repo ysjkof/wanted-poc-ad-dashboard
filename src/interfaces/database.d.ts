@@ -1,4 +1,4 @@
-export interface DailyAdStatus {
+export interface AdStatus {
   imp: number;
   click: number;
   cost: number;
@@ -9,6 +9,8 @@ export interface DailyAdStatus {
   cpc: number;
   cpa: number;
   roas: number;
+}
+export interface DailyAdStatus extends AdStatus {
   date: string;
 }
 
@@ -30,8 +32,8 @@ export interface AdvertisingManagement {
   count: number;
   ads: Advertising[];
 }
-export type AdvertisingStatus = 'active' | 'ended';
-export type AdType = 'web' | 'app';
+export type AdvertisingStatus = "active" | "ended";
+export type AdType = "web" | "app";
 export interface AdvertisingReport {
   cost: number;
   convValue: number;

@@ -6,7 +6,6 @@ function Layout() {
   return (
     <Container>
       <Navigation />
-      layout
       <Outlet />
     </Container>
   );
